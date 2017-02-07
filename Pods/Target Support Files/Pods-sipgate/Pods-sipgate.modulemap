@@ -1,0 +1,6 @@
+framework module Pods_sipgate {
+  umbrella header "Pods-sipgate-umbrella.h"
+
+  export *
+  module * { export * }
+}
