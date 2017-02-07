@@ -1,5 +1,5 @@
 //
-//  BalanceViewController.swift
+//  ViewController.swift
 //  sipgate
 //
 //  Created by Daniel Heckrath on 07/02/2017.
@@ -9,8 +9,11 @@
 import UIKit
 
 class BalanceViewController: UIViewController {
+
+    @IBOutlet var fieldUserName: UITextField!
+    @IBOutlet var fieldPassword: UITextField!
     
-    @IBOutlet var labelBalance: UILabel!
+    @IBOutlet var buttonGetCredentials: UIButton!
     
     var token: String?
     
@@ -18,10 +21,44 @@ class BalanceViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction
+    func onSendPressed(sender: AnyObject) {
+        guard let username = fieldUserName.text else {
+            return
+        }
+        
+        guard let password = fieldPassword.text else {
+            return
+        }
+        
+        if username.isEmpty || password.isEmpty {
+            return
+        }
+        
+        RestManager.shared.authenticate(username: username, password: password) { response in
+            DispatchQueue.main.async {
+                guard let tokenResponse = response else {
+                    self.buttonGetCredentials.isEnabled = false
+                    return
+                }
+            
+                print(tokenResponse)
+            
+                guard let token = tokenResponse.token else {
+                    self.buttonGetCredentials.isEnabled = false
+                    return
+                }
+            
+                self.buttonGetCredentials.isEnabled = true
+                self.token = token
+            }
+        }
     }
     
     @IBAction
@@ -47,7 +84,10 @@ class BalanceViewController: UIViewController {
     
     func updateBalanceLabel(amount: Int, currency: String) {
         let fraction = Float(amount) / 10000.0
-        labelBalance.text = "\(fraction) \(currency)"
+        let alert = UIAlertController(title: "Current Balance", message: "\(fraction) \(currency)", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
-    
+
 }
+

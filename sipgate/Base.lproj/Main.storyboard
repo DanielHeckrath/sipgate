@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Authenticate-->
+        <!--Get Balance-->
         <scene sceneID="3Ow-Zp-sUH">
             <objects>
-                <viewController title="Authenticate" id="UW6-8W-fZA" customClass="CredentialViewController" customModule="sipgate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Get Balance" id="UW6-8W-fZA" customClass="BalanceViewController" customModule="sipgate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IFG-Tl-Js6"/>
                         <viewControllerLayoutGuide type="bottom" id="b6C-tc-prQ"/>
@@ -57,57 +57,27 @@
                                     <action selector="onSendPressedWithSender:" destination="UW6-8W-fZA" eventType="touchUpInside" id="IpQ-mB-kPb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66m-lV-4Xi">
+                                <rect key="frame" x="146" y="327" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Balance"/>
+                                <connections>
+                                    <action selector="onGetBalancePressedWithSender:" destination="UW6-8W-fZA" eventType="touchUpInside" id="ZeI-tM-Ytj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kiG-FO-vms"/>
                     <connections>
+                        <outlet property="buttonGetCredentials" destination="66m-lV-4Xi" id="Epp-D0-QqN"/>
                         <outlet property="fieldPassword" destination="HDg-CI-yOX" id="qpr-IO-l0Z"/>
                         <outlet property="fieldUserName" destination="lhn-R5-bcf" id="Rgt-eM-AAh"/>
-                        <segue destination="mOY-2x-6g1" kind="show" identifier="ShowBalanceSegue" id="pGz-vQ-8mN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlg-Lv-ofm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="724" y="-434.03298350824593"/>
-        </scene>
-        <!--Show Balance-->
-        <scene sceneID="i8h-7T-95p">
-            <objects>
-                <viewController title="Show Balance" id="mOY-2x-6g1" customClass="BalanceViewController" customModule="sipgate" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vYJ-w0-rff"/>
-                        <viewControllerLayoutGuide type="bottom" id="zgz-d6-ELF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Chf-ZY-m0g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-9Z-RZv">
-                                <rect key="frame" x="146" y="113" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get Balance"/>
-                                <connections>
-                                    <action selector="onGetBalancePressedWithSender:" destination="mOY-2x-6g1" eventType="touchUpInside" id="AEa-Ms-ncu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDt-AD-WZh">
-                                <rect key="frame" x="16" y="157" width="343" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="labelBalance" destination="ZDt-AD-WZh" id="2nL-AY-m5r"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L1F-qO-5Pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1540" y="-434.03298350824593"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ntO-zN-Kyc">

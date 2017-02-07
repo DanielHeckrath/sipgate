@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		2D0507D33EAB03967F9660D5 /* Pods_sipgate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268097944F629E1D1234CEBE /* Pods_sipgate.framework */; };
 		65BE3FB21E4A02CD004636BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB11E4A02CD004636BE /* AppDelegate.swift */; };
-		65BE3FB41E4A02CD004636BE /* CredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */; };
+		65BE3FB41E4A02CD004636BE /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB31E4A02CD004636BE /* BalanceViewController.swift */; };
 		65BE3FB71E4A02CD004636BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FB51E4A02CD004636BE /* Main.storyboard */; };
 		65BE3FB91E4A02CD004636BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FB81E4A02CD004636BE /* Assets.xcassets */; };
 		65BE3FBC1E4A02CD004636BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FBA1E4A02CD004636BE /* LaunchScreen.storyboard */; };
 		65BE3FC71E4A02CD004636BE /* sipgateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FC61E4A02CD004636BE /* sipgateTests.swift */; };
 		65BE3FD21E4A02CD004636BE /* sipgateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FD11E4A02CD004636BE /* sipgateUITests.swift */; };
-		65BE3FE01E4A03B8004636BE /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */; };
 		65BE3FE21E4A0981004636BE /* TokenAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */; };
 		65BE3FE41E4A0CCE004636BE /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE31E4A0CCE004636BE /* RestManager.swift */; };
 		65BE3FE61E4A1415004636BE /* TokenAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */; };
@@ -46,7 +45,7 @@
 		58490202B75CCD248484F1EF /* Pods-sipgate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sipgate.release.xcconfig"; path = "Pods/Target Support Files/Pods-sipgate/Pods-sipgate.release.xcconfig"; sourceTree = "<group>"; };
 		65BE3FAE1E4A02CD004636BE /* sipgate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sipgate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE3FB11E4A02CD004636BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialViewController.swift; sourceTree = "<group>"; };
+		65BE3FB31E4A02CD004636BE /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		65BE3FB61E4A02CD004636BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65BE3FB81E4A02CD004636BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BE3FBB1E4A02CD004636BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +56,6 @@
 		65BE3FCD1E4A02CD004636BE /* sipgateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sipgateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE3FD11E4A02CD004636BE /* sipgateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sipgateUITests.swift; sourceTree = "<group>"; };
 		65BE3FD31E4A02CD004636BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAuthResponse.swift; sourceTree = "<group>"; };
 		65BE3FE31E4A0CCE004636BE /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAuthRequest.swift; sourceTree = "<group>"; };
@@ -125,8 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				65BE3FB11E4A02CD004636BE /* AppDelegate.swift */,
-				65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */,
-				65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */,
+				65BE3FB31E4A02CD004636BE /* BalanceViewController.swift */,
 				65BE3FE31E4A0CCE004636BE /* RestManager.swift */,
 				65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */,
 				65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */,
@@ -356,8 +353,7 @@
 				65BE3FE61E4A1415004636BE /* TokenAuthRequest.swift in Sources */,
 				65BE3FE41E4A0CCE004636BE /* RestManager.swift in Sources */,
 				65BE3FE81E4A1958004636BE /* GetBalanceResponse.swift in Sources */,
-				65BE3FE01E4A03B8004636BE /* BalanceViewController.swift in Sources */,
-				65BE3FB41E4A02CD004636BE /* CredentialViewController.swift in Sources */,
+				65BE3FB41E4A02CD004636BE /* BalanceViewController.swift in Sources */,
 				65BE3FB21E4A02CD004636BE /* AppDelegate.swift in Sources */,
 				65BE3FEA1E4A1FBB004636BE /* ErrorResponse.swift in Sources */,
 			);
