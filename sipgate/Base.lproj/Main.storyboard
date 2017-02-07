@@ -50,9 +50,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-hj-Kgy">
-                                <rect key="frame" x="169" y="249" width="36" height="30"/>
+                                <rect key="frame" x="154" y="249" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send"/>
+                                <state key="normal" title="Authorize"/>
                                 <connections>
                                     <action selector="onSendPressedWithSender:" destination="UW6-8W-fZA" eventType="touchUpInside" id="IpQ-mB-kPb"/>
                                 </connections>
