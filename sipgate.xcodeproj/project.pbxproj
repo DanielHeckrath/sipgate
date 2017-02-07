@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0507D33EAB03967F9660D5 /* Pods_sipgate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268097944F629E1D1234CEBE /* Pods_sipgate.framework */; };
 		65BE3FB21E4A02CD004636BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB11E4A02CD004636BE /* AppDelegate.swift */; };
-		65BE3FB41E4A02CD004636BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB31E4A02CD004636BE /* ViewController.swift */; };
+		65BE3FB41E4A02CD004636BE /* CredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */; };
 		65BE3FB71E4A02CD004636BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FB51E4A02CD004636BE /* Main.storyboard */; };
 		65BE3FB91E4A02CD004636BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FB81E4A02CD004636BE /* Assets.xcassets */; };
 		65BE3FBC1E4A02CD004636BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE3FBA1E4A02CD004636BE /* LaunchScreen.storyboard */; };
 		65BE3FC71E4A02CD004636BE /* sipgateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FC61E4A02CD004636BE /* sipgateTests.swift */; };
 		65BE3FD21E4A02CD004636BE /* sipgateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FD11E4A02CD004636BE /* sipgateUITests.swift */; };
+		65BE3FE01E4A03B8004636BE /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */; };
+		65BE3FE21E4A0981004636BE /* TokenAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */; };
+		65BE3FE41E4A0CCE004636BE /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE31E4A0CCE004636BE /* RestManager.swift */; };
+		65BE3FE61E4A1415004636BE /* TokenAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */; };
+		65BE3FE81E4A1958004636BE /* GetBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE71E4A1958004636BE /* GetBalanceResponse.swift */; };
+		65BE3FEA1E4A1FBB004636BE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FE91E4A1FBB004636BE /* ErrorResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		268097944F629E1D1234CEBE /* Pods_sipgate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sipgate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3BF73BC96D6C80B9B9F48 /* Pods-sipgate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sipgate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sipgate/Pods-sipgate.debug.xcconfig"; sourceTree = "<group>"; };
+		58490202B75CCD248484F1EF /* Pods-sipgate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sipgate.release.xcconfig"; path = "Pods/Target Support Files/Pods-sipgate/Pods-sipgate.release.xcconfig"; sourceTree = "<group>"; };
 		65BE3FAE1E4A02CD004636BE /* sipgate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sipgate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE3FB11E4A02CD004636BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65BE3FB31E4A02CD004636BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialViewController.swift; sourceTree = "<group>"; };
 		65BE3FB61E4A02CD004636BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65BE3FB81E4A02CD004636BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BE3FBB1E4A02CD004636BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		65BE3FCD1E4A02CD004636BE /* sipgateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sipgateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE3FD11E4A02CD004636BE /* sipgateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sipgateUITests.swift; sourceTree = "<group>"; };
 		65BE3FD31E4A02CD004636BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAuthResponse.swift; sourceTree = "<group>"; };
+		65BE3FE31E4A0CCE004636BE /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAuthRequest.swift; sourceTree = "<group>"; };
+		65BE3FE71E4A1958004636BE /* GetBalanceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBalanceResponse.swift; sourceTree = "<group>"; };
+		65BE3FE91E4A1FBB004636BE /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0507D33EAB03967F9660D5 /* Pods_sipgate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D6173989D1B53D025E44E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				268097944F629E1D1234CEBE /* Pods_sipgate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65BE3FA51E4A02CD004636BE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				65BE3FC51E4A02CD004636BE /* sipgateTests */,
 				65BE3FD01E4A02CD004636BE /* sipgateUITests */,
 				65BE3FAF1E4A02CD004636BE /* Products */,
+				A6DC85D758808504138F16B5 /* Pods */,
+				05D6173989D1B53D025E44E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +125,16 @@
 			isa = PBXGroup;
 			children = (
 				65BE3FB11E4A02CD004636BE /* AppDelegate.swift */,
-				65BE3FB31E4A02CD004636BE /* ViewController.swift */,
+				65BE3FB31E4A02CD004636BE /* CredentialViewController.swift */,
+				65BE3FDF1E4A03B8004636BE /* BalanceViewController.swift */,
+				65BE3FE31E4A0CCE004636BE /* RestManager.swift */,
+				65BE3FE11E4A0981004636BE /* TokenAuthResponse.swift */,
+				65BE3FE51E4A1415004636BE /* TokenAuthRequest.swift */,
+				65BE3FE71E4A1958004636BE /* GetBalanceResponse.swift */,
+				65BE3FE91E4A1FBB004636BE /* ErrorResponse.swift */,
 				65BE3FB51E4A02CD004636BE /* Main.storyboard */,
-				65BE3FB81E4A02CD004636BE /* Assets.xcassets */,
 				65BE3FBA1E4A02CD004636BE /* LaunchScreen.storyboard */,
+				65BE3FB81E4A02CD004636BE /* Assets.xcassets */,
 				65BE3FBD1E4A02CD004636BE /* Info.plist */,
 			);
 			path = sipgate;
@@ -125,6 +158,15 @@
 			path = sipgateUITests;
 			sourceTree = "<group>";
 		};
+		A6DC85D758808504138F16B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3BF73BC96D6C80B9B9F48 /* Pods-sipgate.debug.xcconfig */,
+				58490202B75CCD248484F1EF /* Pods-sipgate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65BE3FD61E4A02CD004636BE /* Build configuration list for PBXNativeTarget "sipgate" */;
 			buildPhases = (
+				2F2F655D6DE42F120A50278B /* [CP] Check Pods Manifest.lock */,
 				65BE3FAA1E4A02CD004636BE /* Sources */,
 				65BE3FAB1E4A02CD004636BE /* Frameworks */,
 				65BE3FAC1E4A02CD004636BE /* Resources */,
+				AF7956C030F9853C3D05DCA2 /* [CP] Embed Pods Frameworks */,
+				90305639D085743CBF282581 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +299,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F2F655D6DE42F120A50278B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90305639D085743CBF282581 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sipgate/Pods-sipgate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7956C030F9853C3D05DCA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sipgate/Pods-sipgate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65BE3FAA1E4A02CD004636BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BE3FB41E4A02CD004636BE /* ViewController.swift in Sources */,
+				65BE3FE21E4A0981004636BE /* TokenAuthResponse.swift in Sources */,
+				65BE3FE61E4A1415004636BE /* TokenAuthRequest.swift in Sources */,
+				65BE3FE41E4A0CCE004636BE /* RestManager.swift in Sources */,
+				65BE3FE81E4A1958004636BE /* GetBalanceResponse.swift in Sources */,
+				65BE3FE01E4A03B8004636BE /* BalanceViewController.swift in Sources */,
+				65BE3FB41E4A02CD004636BE /* CredentialViewController.swift in Sources */,
 				65BE3FB21E4A02CD004636BE /* AppDelegate.swift in Sources */,
+				65BE3FEA1E4A1FBB004636BE /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +509,7 @@
 		};
 		65BE3FD71E4A02CD004636BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC3BF73BC96D6C80B9B9F48 /* Pods-sipgate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sipgate/Info.plist;
@@ -422,6 +522,7 @@
 		};
 		65BE3FD81E4A02CD004636BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58490202B75CCD248484F1EF /* Pods-sipgate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sipgate/Info.plist;
@@ -505,6 +606,7 @@
 				65BE3FD81E4A02CD004636BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65BE3FD91E4A02CD004636BE /* Build configuration list for PBXNativeTarget "sipgateTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +615,7 @@
 				65BE3FDB1E4A02CD004636BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65BE3FDC1E4A02CD004636BE /* Build configuration list for PBXNativeTarget "sipgateUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +624,7 @@
 				65BE3FDE1E4A02CD004636BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
